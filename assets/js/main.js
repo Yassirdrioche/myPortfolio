@@ -1,9 +1,9 @@
 const profilePicture = document.querySelector(".profile-picture");
-const loading = document.querySelector(".loading");
+const spinner = document.querySelector(".spinner");
 
 profilePicture.addEventListener("load", () => {
   console.log("Profile picture loaded");
-  loading.style.display = "none";
+  spinner.style.display = "none";
 });
 
 /*==================== MENU SHOW Y HIDDEN ====================*/
