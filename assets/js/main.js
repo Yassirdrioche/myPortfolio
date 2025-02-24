@@ -1,9 +1,10 @@
+const profilePicture = document.querySelector(".profile-picture");
+const loading = document.querySelector(".loading");
 
-
-
-
-
-
+profilePicture.addEventListener("load", () => {
+  console.log("Profile picture loaded");
+  loading.style.display = "none";
+});
 
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById("nav-menu"),
@@ -146,11 +147,6 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-
-
-
-
-
 /*==================== SHOW SCROLL UP ====================*/
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
@@ -159,11 +155,6 @@ function scrollUp() {
   else scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp);
-
-
-
-
-
 
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById("theme-button");
